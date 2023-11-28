@@ -1,0 +1,43 @@
+{
+    "protocol": "https://decentralinked-job-protocol.co/",
+    "published": true,
+    "types": {
+      "job": {
+        "schema": "https://schema.org/JobPosting",
+        "dataFormats": ["application/json"]
+      },
+      "application": {
+        "schema": "https://schema.org/Person",
+        "dataFormats": ["application/json"]
+      }
+    },
+    "structure": {
+      "job": {
+        "$actions": [
+          {
+            "who": "anyone",
+            "can": "read"
+          },
+          {
+            "who": "anyone",
+            "can": "write"
+          }
+        ] ,
+        "application": {
+          "$actions": [
+            {
+              "who": "author",
+              "of": "job",
+              "can": "read"
+            },
+            {
+              "who": "author",
+              "of": "application",
+              "can": "write"
+            }
+          ]
+        }
+      }
+    }
+  }
+  

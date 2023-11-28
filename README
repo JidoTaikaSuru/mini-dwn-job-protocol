@@ -1,0 +1,6 @@
+Install TS "inquirer" for the fancy console work:
+    npm install @inquirer/prompts
+    yarn add @inquirer/prompts   
+
+Run TS using npx:
+    npx tsx index.ts
